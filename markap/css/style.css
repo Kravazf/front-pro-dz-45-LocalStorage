@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+}
+
+#bgwrapp{
+    background-color: #c6c2fd;
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#header {
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #c6c2fd;
+    border-bottom: 1px solid hsl(244, 34%, 55%) ;
+}
+
+#main {
+    padding: 50px 0px;
+    
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #4B0082;
+    font-size: 70px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(55, 192, 85);
+}
+
+img {
+    max-width: 100%;
+    height: auto
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#wrapMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    background-color: azure;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center; 
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center; 
+}
+
+.cardProduct {
+    display: flex;
+    background-color: azure;
+    padding: 20px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buy-button {
+    margin-top: 10px;
+    border-color: azure;
+    border: 1px solid blueviolet;
+    max-width: 25%;
+    border-radius: 5px;
+}
+
+.buy-button > a {
+    padding: 5px 10px;
+    color: white;
+    display: block;
+    background-color: orangered;
+}
+
+.sumbit-button {
+    background-color: orangered;
+    border: 1px solid blueviolet;
+    margin-top: 20px;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-style: 600;
+    border-radius: 5px;
+}
+
+.my-orders-button {
+    position: fixed;
+    top: 5%;
+    right: 7%;
+    background-color: orangered;
+    border: 1px solid blueviolet;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: orangered;
+    border: 1px solid blueviolet;
+    width: 100px;
+    height: 22px;
+    color: black;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: -100%;
+}
+
+.order-details-button {
+    background-color: orangered;
+    border: 1px solid blueviolet;
+    width: 100px;
+    height: 22px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: -30%;
+}
+
+.orders-list > li {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+#form{
+    display: flex;
+    background-color: azure;
+    padding: 20px 15px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin: 10px 30px 0 0;
+    padding: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: solid 1px blueviolet;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: white;
+    flex-direction: column;
+}
+
+.order-form-container {
+    padding: 0 20px;
+}
+
+select, input, textarea {
+    min-width: 400px;
+    height: 30px;
+}
+
+.radio-container input[value="credit-card"] {
+    margin-bottom: 20px;
+    height: 15px;
+}
+  
+.radio-container input[value="cash"] {
+    margin-bottom: 20px;
+    height: 15px;
+}
+
+select, input, textarea {
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+#form select {
+    text-align: center;
+    font-size: 20px;
+}
+
+.order-confirmation-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: solid 1px blueviolet;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: azure;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.confirmation-button {
+    background-color: orangered;
+    border: 1px solid blueviolet;
+    margin: 20px 0;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-style: 600;
+    border-radius: 5px;
+}
+
+.order-ifo li {
+    margin: 0 0 15px 0;
+    border: solid 1px blueviolet;
+    border-radius: 10px;
+    min-width: 400px;
+    height: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.orders-container {
+    color: white;
+    font-style: 600;
+    font-size: 20px;
+}
+
+.order-details-container {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
